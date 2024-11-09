@@ -1,0 +1,222 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation */
+.nav-container {
+    background-color: #242527;
+    padding: 10px ;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    margin: 0 20px;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.next, .prev {
+    position: absolute;
+    top: 50%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #2b4d24;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Events Section */
+.events-section {
+    background-color: #444;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Media Section */
+.media-section {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #2b4d24;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(43, 77, 36, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn-submit {
+    background-color: #f1c40f;
+    padding: 10px 20px;
+    color: black;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer-content {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #e2b007;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-bar.active ul {
+        display: block;
+    }
+
+    .hero {
+        height: 50vh;
+    }
+
+    .slide {
+        display: block;
+        height: auto;
+        background-size: contain;
+    }
+
+    .next, .prev {
+        font-size: 25px;
+    }
+
+    .about-section, .events-section, .media-section, .contact-section {
+        padding: 40px 20px;
+    }
+
+    .about-section h2, .events-section h2, .media-section h2, .contact-section h2 {
+        font-size: 1.5em;
+    }
+
+    .contact-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .footer-content {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar a {
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 40vh;
+    }
+
+    .about-section h2, .events-section h2, .media-section h2, .contact-section h2 {
+        font-size: 1.2em;
+    }
+
+    .input-group input, .input-group textarea {
+        font-size: 0.9em;
+    }
+
+    .btn-submit {
+        font-size: 0.9em;
+    }
+}

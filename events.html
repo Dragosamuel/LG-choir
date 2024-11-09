@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Lemongaba SDA Choir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ev.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">LG SDA.<span>CHOIR</span></h1>
+            <nav class="nav-bar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Upcoming Notifications Section -->
+        <section id="notifications">
+            <h2>Upcoming Notifications</h2>
+            <p>No upcoming activities.</p>
+        </section>
+
+        <section id="weekly-programs" class="section">
+            <h2>Weekly Programs</h2>
+            <h3>Rehearsal Schedule</h3>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Activities</th>
+                            <th>In Charge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Day">Sunday</td>
+                            <td data-label="Time">3:30 PM - 5:30 PM</td>
+                            <td data-label="Activities">Vocal Training, Music</td>
+                            <td data-label="In Charge">Minala Monica</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Day">Tuesday</td>
+                            <td data-label="Time">4:00 PM - 6:00 PM</td>
+                            <td data-label="Activities">Rehearsing New Songs</td>
+                            <td data-label="In Charge">Lomira John</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Day">Thursday</td>
+                            <td data-label="Time">4:00 PM - 6:00 PM</td>
+                            <td data-label="Activities">Performance for Sabbath</td>
+                            <td data-label="In Charge">Eriga Rechard</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Day">Sabbath After Divine</td>
+                            <td data-label="Time">3:00 PM - 5:30 PM</td>
+                            <td data-label="Activities">Singing based on choice request</td>
+                            <td data-label="In Charge">Jackson Dokolo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+        
+
+        <!-- Image Gallery Section -->
+        <section id="gallery">
+            <h3>Image Gallery</h3>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="image/reha.jpg" alt="Event 1"></div>
+                    <div class="slide"><img src="image/per.jpg" alt="Event 2"></div>
+                    <div class="slide"><img src="image/st2.jpg" alt="Event 3"></div>
+                    <div class="slide"><img src="image/stag.jpg" alt="Event 1"></div>
+                    <div class="slide"><img src="image/stid1.jpg" alt="Event 2"></div>
+                    <div class="slide"><img src="image/grp.jpg" alt="Event 3"></div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Support Section -->
+   <section class="support-section">
+    <h3>Support Our Choir</h3>
+    <p>Your donations help us continue spreading faith through music. Consider making a contribution to support our ministry.</p>
+    <a href="donate.html" class="btn-support">Support Us</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>Follow us on:
+            <a href="https://www.youtube.com/@LemongabaSDAchurchchoir" target="_blank"></a> <i class="fab fa-youtube"></i> 
+            <a href="https://www.facebook.com/search/top?q=lemon%20gaba%20sda%20church%20choir" target="_blank"></a> <i class="fab fa-facebook"></i>
+        </p>
+        <p>Email:lemongaba@gmial.com | Phone: +211-924742100/+211-922597297</p>
+        <p><Address:Lemongaba>Lemongaba</Address:Lemongaba>, Juba, South Sudan</p>
+        <p>&copy; 2024 Lemongaba SDA Choir. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+

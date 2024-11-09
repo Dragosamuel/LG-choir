@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMONGABA SDA CHOIR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="ev.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <h1 class="logo">LG SDA.<span>CHOIR</span></h1>
+            <nav class="nav-bar">
+                <ul id="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to Lemongaba SDA Choir</h2>
+            <p>Experience the harmony of faith and music.</p>
+            <a href="about.html" class="btn-primary">Learn More</a>
+        </div>
+        <!-- Image Slider -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide fade">
+                    <img src="image/stid1.jpg" alt="Choir Performance 1">
+                </div>
+                <div class="slide fade">
+                    <img src="image/stu.jpg" alt="Choir Performance 2">
+                </div>
+                <div class="slide fade">
+                    <img src="image/gr.jpg" alt="Choir Performance 3">
+                </div>
+            </div>
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+    </section>
+
+    <!-- About / Mission Section -->
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>We are dedicated to spreading joy and faith through music, bringing together voices in harmony and service.</p>
+    </section>
+
+    <!-- Highlighted Sections -->
+    <section id="highlights">
+        <div class="highlight-card">
+            <img src="image/mission.jpg" alt="Our Mission">
+            <h3>Our Mission</h3>
+            <p>Sharing faith through powerful choral performances.</p>
+            <a href="about.html">Read More</a>
+        </div>
+        <div class="highlight-card">
+            <img src="image/music.jpg" alt="Our Music">
+            <h3>Our Music</h3>
+            <p>Listen to our collection of inspired performances.</p>
+            <a href="media.html">Listen Now</a>
+        </div>
+        <div class="highlight-card">
+            <img src="image/join.jpg" alt="Join Us">
+            <h3>Join Us</h3>
+            <p>Become part of our musical family and spread joy.</p>
+            <a href="contact.html">Get Involved</a>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h2>What People Say</h2>
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p>"Lemongaba SDA Choir has been a blessing, uplifting our spirits through divine melodies."</p>
+                <span>- Choir Fan</span>
+            </div>
+        </div>
+
+        <div class="testimonial">
+            <div class="testimonial-content">
+                <p>"Their music brings us closer to our faith."</p>
+                <span>- Church Member</span>
+            </div>
+        </div>
+    </section>
+
+   <!-- Support Section -->
+   <section class="support-section">
+    <h3>Support Our Choir</h3>
+    <p>Your donations help us continue spreading faith through music. Consider making a contribution to support our ministry.</p>
+    <a href="donate.html" class="btn-support">Support Us</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <p>Follow us on:
+            <a href="https://www.youtube.com/@LemongabaSDAchurchchoir" target="_blank"></a> <i class="fab fa-youtube"></i> 
+            <a href="https://www.facebook.com/search/top?q=lemon%20gaba%20sda%20church%20choir" target="_blank"></a> <i class="fab fa-facebook"></i>
+        </p>
+        <p>Email:lemongaba@gmial.com | Phone: +211-924742100/+211-922597297</p>
+        <p><Address:Lemongaba>Lemongaba</Address:Lemongaba>, Juba, South Sudan</p>
+        <p>&copy; 2024 Lemongaba SDA Choir. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

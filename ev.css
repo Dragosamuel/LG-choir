@@ -1,0 +1,122 @@
+/* Responsive image styles for the gallery */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Button styles for previous and next */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transform: translateY(-50%);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .prev, .next {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+/* Table Wrapper */
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+#weekly-programs table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+#weekly-programs th, #weekly-programs td {
+    padding: 16px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#weekly-programs th {
+    background-color: #333;
+    color: #fff;
+}
+
+#weekly-programs tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#weekly-programs tr:hover {
+    background-color: #eaeaea;
+}
+
+/* Responsive Table Styling for Smaller Screens */
+@media (max-width: 768px) {
+    #weekly-programs table, #weekly-programs thead, #weekly-programs tbody, #weekly-programs th, #weekly-programs td, #weekly-programs tr {
+        display: block;
+        width: 100%;
+    }
+
+    #weekly-programs tr {
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #weekly-programs th {
+        display: none; /* Hide table headers on small screens */
+    }
+
+    #weekly-programs td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border: none;
+        background-color: #fff;
+    }
+
+    /* Add labels before each cell on mobile */
+    #weekly-programs td[data-label]::before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: #333;
+        margin-right: 8px;
+    }
+}

@@ -1,0 +1,333 @@
+#contact {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Optional: Adjust padding on smaller screens */
+@media (max-width: 768px) {
+    #contact {
+        padding: 40px 15px;
+    }
+}
+
+/* Contact Container */
+.contact-container {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(122, 124, 122, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Form Styling */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #f1c40f;
+}
+
+.input-group input,
+.input-group textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1c40f;
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #e2b007;
+}
+
+/* Support Section */
+.support-section {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-support {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #f1c40f;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-support:hover {
+    background-color: #e2b007;
+}
+
+/* Footer */
+.footer-content {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+.footer-content a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+.footer-content a:hover {
+    color: #e2b007;
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #25c563;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #131212;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Header and Navigation */
+.nav-container {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar ul li {
+    margin: 0 20px;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 18px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white ;
+}
+
+/* Media Section */
+.media-section {
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    color: white transparent;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.content-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Song Download and Social Links */
+.album ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.album ul li {
+    margin: 10px;
+    text-align: center;
+}
+
+.download-link {
+    display: block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #eaecf0;
+    color: rgb(86, 120, 221);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-link:hover {
+    background-color: #83695f;
+}
+
+/* Social Links */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+}
+
+/* New Songs Notification */
+.new-songs {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #7898d3;
+    border-radius: 8px;
+}
+
+.new-songs input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 70%;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+.new-songs button {
+    padding: 10px;
+    background-color: #595a6b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-songs button:hover {
+    background-color: #2f4e34;
+}
+
+/* Footer */
+.footer-content {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content a {
+    color: #ff6347;
+    margin: 0 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column
+    }
+    /* Responsive Navigation */
+.menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-bar ul.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+    }
+    .nav-bar ul li {
+        text-align: center;
+    }
+}
+
+/* Responsive Table */
+#events table {
+    width: 100%;
+    border-collapse: collapse;
+}
+#events th, #events td {
+    padding: 8px;
+    text-align: left;
+}
+@media (max-width: 600px) {
+    #events table, #events thead, #events tbody, #events th, #events td, #events tr {
+        display: block;
+    }
+    #events tr {
+        margin-bottom: 10px;
+    }
+    #events th, #events td {
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+    #events th::before, #events td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+/* Responsive Image Gallery */
+.slider {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+.slides {
+    display: flex;
+    overflow-x: auto;
+}
+.slide {
+    min-width: 100%;
+}
